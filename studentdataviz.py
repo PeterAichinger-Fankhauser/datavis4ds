@@ -42,11 +42,11 @@ def create_lineplot_annotations_y(dataframe,
                         showarrow=False))
     return(y_heights, ants) # list of annotation dicts
 
-    """
+"""
 current best product
 """
 app = Dash(__name__)
-server=app.server
+server = app.server
 
 df = df_by_semester_and_study_agg.copy()
 
