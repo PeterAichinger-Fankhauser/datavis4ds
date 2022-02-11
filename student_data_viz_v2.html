@@ -14588,79 +14588,13 @@ Name: Land, dtype: int64</pre>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">small menu to pick a semester to create violin plot for</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="n">menu</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
-    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
-    <span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Semester:&quot;</span>
-<span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">menu</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="522ca771-ffe0-42f2-b802-38a3f8ca4293" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a6a2906d00084c0a8cff4c5bc5a5a66a", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ects_vio_plot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">selected_semester</span><span class="o">=</span><span class="n">menu</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ects_vio_plot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">selected_semester</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14682,7 +14616,7 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x22e16fd3d30&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x244baef3610&gt;</pre>
 </div>
 
 </div>
@@ -14706,6 +14640,11 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="ECTS-Punkte-im-Studienverlauf-inkl.-Vergleich">ECTS-Punkte im Studienverlauf inkl. Vergleich<a class="anchor-link" href="#ECTS-Punkte-im-Studienverlauf-inkl.-Vergleich">&#182;</a></h2>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14745,7 +14684,7 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x22e19c1ba90&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x244bc1a8730&gt;</pre>
 </div>
 
 </div>
@@ -14837,7 +14776,7 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.legend.Legend at 0x22e265c5c40&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x244bad30460&gt;</pre>
 </div>
 
 </div>
@@ -14898,7 +14837,7 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.legend.Legend at 0x22e1b01c670&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x244bc127490&gt;</pre>
 </div>
 
 </div>
@@ -14925,7 +14864,8 @@ var element = document.getElementById('522ca771-ffe0-42f2-b802-38a3f8ca4293');
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><b>Weitere Bearbeitung durch interaktiven Plot mit plotly/plotly express und Dash</b></p>
+<p><b>Weitere Bearbeitung durch interaktiven Plot mit plotly/plotly express und Dash</b>:</p>
+<p>Die App läuft unter diesem Link (Deployment via Heroku): <a href="https://studentviz.herokuapp.com/">https://studentviz.herokuapp.com/</a></p>
 
 </div>
 </div>
